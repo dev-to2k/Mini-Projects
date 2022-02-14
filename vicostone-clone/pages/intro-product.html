@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href=".././style.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="container-fluid px-5 pb-3 shadow">
+      <!-- Language & Search & Sign in/Sign up -->
+      <div class="language d-flex align-items-center py-2">
+        <span>Vicostone Vietnam</span>
+        <div class="divider"></div>
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            vi-vn
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Global</a></li>
+            <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+          </ul>
+        </div>
+        <!-- Search & Sign in/Sign up -->
+        <div class="ms-auto d-flex align-items-center">
+          <div class="search-container">
+            <form action="#">
+              <input type="text" placeholder="Tìm kiếm sản phẩm" name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="sign-in">
+            <a href="#">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="https://visualizer.vicostone.com/img/logo-vicostone.00e5e07d.png" class="img-fluid" alt="logo">
+      </div>
+      <!-- Menu -->
+      <div class="menu">
+        <ul class="d-flex list-unstyled justify-content-center mb-0">
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Bộ sưu tập</a></li>
+          <li><a href="#">Tìm điểm bán</a></li>
+          <li><a href="#">Hỗ trợ</a></li>
+          <li><a href="#">Dành cho chuyên gia</a></li>
+          <li><a href="#">Về Vicostone...</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Sub navigation -->
+    <div class="sub-nav">
+      <ul class="list-unstyled d-flex">
+        <li><a href="#">Bộ sưu tập</a></li>
+        <li><a href="#">Lợi thế của sản phẩm</a></li>
+        <li><a href="#">3D Visualizer</a></li>
+        <li><a href="#">Exotic Inspiration</a></li>
+      </ul>
+    </div>
+    <!-- Main -->
+    <main class="bg-white">
+      <!-- Content Header -->
+      <section class="section-content-header is-inview mb-5">
+        <div class="container text-white text-center p-5" style="background-color: #0c182f;">
+          <p class="fs-3">Tìm bề mặt thạch anh Vicostone hoàn hảo của bạn</p>
+          <span class="d-inline-block">Thiết kế vượt thời gian kết hợp với chất lượng tuyệt vời và sự khéo léo cho phép chúng tôi tạo ra các bề mặt <br /> đá thạch anh độc đáo và
+            đẹp
+            mắt
+            phản ánh tính cách của
+            bạn theo từng
+            chi tiết cuối cùng.</span>
+        </div>
+      </section>
+      <!-- Search -->
+      <section class="section-form-search is-inview">
+        <div class="container">
+          <div class="search mb-5">
+            <form action="#">
+              <input type="text" placeholder="Tìm kiếm" name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <p class="text-center" style="color: #707070;">Rất tiếc, chúng tôi không thể tìm thấy bất kỳ bề mặt thạch anh Vicostone nào cho "gạch". Nhấp vào <a href="#"><u>tại
+                đây</u></a> để xem tất cả các
+            sản phẩm có sẵn.</p>
+          <hr style="margin: 70px 0;" />
+        </div>
+      </section>
+      <!-- Collection -->
+      <section class="collection mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="fs-3">Khám phá các bộ sưu tập</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-4">
+              <div class="card border-0">
+                <a href="#">
+                  <div class="position-relative overflow-hidden" id="wrap-img">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg " class="card-img-top" alt="...">
+                    <img src="https://i.pinimg.com/564x/2c/a1/87/2ca18792cc3ef07858bc108e43f5e747.jpg" alt="..." class="card-img-top position-absolute top-0" style="left: 0">
+                    <div class="position-absolute text-white d-flex justify-content-center align-items-center flex-column bottom-0 w-100 h-25" id="text-up"
+                      style="background-color: rgba(29,29,29,.6);;">
+                      <span>Tìm hiểu thêm</span>
+                      <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <h5 class="card-title">EXOTIC
+                  </h5>
+                  <p class="card-text">Bộ sưu tập cao cấp Exotic tái tạo những thiết kế độc đáo, tinh tế, quý phái không chỉ của các sản phẩm đá tự nhiên mà còn từ những vẻ đẹp vô
+                    giá của thiên nhiên, là nguồn cảm hứng
+                    bất tận cho mọi sáng tạo</p>
+                  <a href="#"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card border-0">
+                <a href="#">
+                  <div class="position-relative overflow-hidden" id="wrap-img">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg " class="card-img-top" alt="...">
+                    <img src="https://i.pinimg.com/564x/a4/87/2d/a4872d416687e5d35e5eb5bb796a555c.jpg" alt="..." class="card-img-top position-absolute top-0" style="left: 0">
+                    <div class="position-absolute text-white d-flex justify-content-center align-items-center flex-column bottom-0 w-100 h-25" id="text-up"
+                      style="background-color: rgba(29,29,29,.6);;">
+                      <span>Tìm hiểu thêm</span>
+                      <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <h5 class="card-title">NATURAL
+                  </h5>
+                  <p class="card-text">Bộ sưu tập Natural mang sắc thái mạnh mẽ của đá granite cùng sự thanh thoát của đá cẩm thạch, tạo dựng không gian nội thất thân thiện với
+                    thiên nhiên</p>
+                  <a href="#"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card border-0">
+                <a href="#">
+                  <div class="position-relative overflow-hidden" id="wrap-img">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-girl-cat-names-1606245046.jpg " class="card-img-top" alt="...">
+                    <img src="https://i.pinimg.com/originals/99/d8/20/99d820b75cfb70890167a186d4700676.jpg" alt="..." class="card-img-top position-absolute top-0" style="left: 0">
+                    <div class="position-absolute text-white d-flex justify-content-center align-items-center flex-column bottom-0 w-100 h-25" id="text-up"
+                      style="background-color: rgba(29,29,29,.6);;">
+                      <span>Tìm hiểu thêm</span>
+                      <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                  </div>
+                </a>
+                <div class="card-body px-0">
+                  <h5 class="card-title">CLASSIC
+                  </h5>
+                  <p class="card-text">Dựa trên các gam màu kinh điển, bộ sưu tập Classic mang nét tao nhã sang trọng thích hợp với mọi công trình kiến trúc cổ điển và hiện đại</p>
+                  <a href="#"><u>Tìm hiểu thêm</u></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Introduce -->
+      <section class="introduce mb-5">
+        <div class="container p-5" style="background-color: #f8f8f8;">
+          <div class="text-center mb-5">
+            <p class="fs-3">Hơn 130 lựa chọn màu sắc thoả mãn mọi nhu cầu của bạn </p>
+            <p>Với những dải màu sắc đa dạng phong phú, sản phẩm của VICOSTONE thích hợp với mọi ứng dụng nội thất</p>
+            <button type="button" class="btn btn-outline-dark mt-4">Tìm hiểu thêm về Vicostone®</button>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card border-0">
+                <a href="#">
+                  <div class="overflow-hidden">
+                    <img src="https://randomwordgenerator.com/img/picture-generator/57e4d6434a53ae14f1dc8460962e33791c3ad6e04e50744075287bd49449c6_640.jpg" class="card-img-top"
+                      alt="...">
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">GIẢ LẬP KHÔNG GIAN</h5>
+                  <p class="card-text">Lựa chọn một căn phòng và giả lập căn nhà mơ ước bằng cách chọn bề mặt và thiết kế mà bạn thích</p>
+                  <a href="#"><u>Thiết kế bây giờ</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card border-0">
+                <a href="#">
+                  <div class="overflow-hidden">
+                    <img src="https://randomwordgenerator.com/img/picture-generator/5ee8d2414d50b10ff3d8992cc12c30771037dbf85254794e73287ad49048_640.jpg" class="card-img-top"
+                      alt="...">
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">ƯU ĐIỂM CỦA ĐÁ VICOSTONE</h5>
+                  <p class="card-text">Khám phá những ưu điểm nổi bật của sản phẩm đá thạch anh Vicostone để hiểu được lí do chúng tôi là sự lựa chọn tuyệt với nhất cho căn nhà của
+                    bạn</p>
+                  <a href="#"><u>Thiết kế bây giờ</u></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card border-0">
+                <a href="#">
+                  <div class="overflow-hidden">
+                    <img src="https://randomwordgenerator.com/img/picture-generator/52e2d64a4851a514f1dc8460962e33791c3ad6e04e507441722978d6944acc_640.jpg" class="card-img-top"
+                      alt="...">
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">TÌM ĐẾN ĐIỂM BÁN</h5>
+                  <p class="card-text">Tìm đến điểm bán hàng thuận tiện cho bạn nhất </p>
+                  <div class="d-flex justify-content-between">
+                    <a href="#"><u>Tìm nhà phân phối</u></a>
+                    <a href="#"><u>Liên hệ với chúng tôi</u></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="text-uppercase">USEFUL LINKS</p>
+            <ul class="d-flex list-unstyled">
+              <li>
+                <a href="#" class="text-white">Quartz Surfaces</a>
+                <ul class="list-unstyled">
+                  <li><a href="#">By Collections</a></li>
+                  <li><a href="#">Product Advantages</a></li>
+                  <li><a href="#">In-room Visualizer</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="text-white">Galleries</a>
+                <ul class="list-unstyled">
+                  <li><a href="#">Kitchen</a></li>
+                  <li><a href="#">Bathroom</a></li>
+                  <li><a href="#">Commercials</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="text-white">Where To Buy</a>
+              </li>
+              <li>
+                <a href="#" class="text-white">Support</a>
+                <ul class="list-unstyled">
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Warranty</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="text-white">About Vicostone</a>
+                <ul class="list-unstyled">
+                  <li><a href="#">Our Commitments</a></li>
+                  <li><a href="#">Press Room</a></li>
+                  <li><a href="#">Carrers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 position-relative">
+            <div class="social-media">
+              <a href="#"><span>Facebook</span></a>
+              <a href="#"><span>Twitter</span></a>
+              <a href="#"><span>Google+</span></a>
+              <a href="#"><span>Github</span></a>
+              <!-- <a href="#"><span>Dribbble</span></a>
+                  <a href="#"><span>CodePen</span></a> -->
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-lg-12">
+            <div class="footer-divider"></div>
+          </div>
+          <p class="text-end"><a href="#" class="text-white">Press Room</a></p>
+          <p class="w-75 d-inline-block" style="color: #707070">The product images shown are for illustration purposes only. Color, shade and grain may vary from actual product.
+            <br />
+            Vicostone reserves the right to change product images at any time without notice
+            © 2018 VICOSTONE
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <!-- Jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Jquery UI JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS -->
+    <script src=".././app.js"></script>
+  </body>
+
+</html>
