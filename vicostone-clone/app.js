@@ -1,3 +1,4 @@
+// Click on menu
 var menu = $(".menu ul");
 var menuItems = menu.find("li").find("a");
 menuItems.on("click", function () {
