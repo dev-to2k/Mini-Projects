@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.header-top {
+  font-size: 15px;
+}
+
+.header-top .hotline {
+  color: rgb(190, 162, 0);
+  font-weight: 500;
+}
+
+.header-top .center a,
+.header-top .game-social a {
+  color: red;
+  font-weight: 500;
+}
+
+.header-top .center a:hover,
+.header-top .game-social a:hover {
+  color: lightcoral;
+}
+
+.header-top .game-social .group a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: lightgray;
+  color: black;
+  margin-left: 5px;
+}
+
+.header-top .game-social .group a:hover {
+  background-color: blue;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+.navbar .btn-search {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-width: 1px;
+  padding-top: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.navbar .btn-search:hover {
+  background: black;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  color: blue !important;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link span {
+  color: red;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+/* .collapse .navbar-collapse {
+  position: relative;
+}
+
+nav form #input-search {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(70px);
+  width: 25%;
+} */
+
+/* Main */
+main .row .col-6 .left span {
+  font-size: 8rem;
+}
+
+.uvc-heading-spacer {
+  margin: 0 auto 1rem auto;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+main .align-icon .divider {
+  border-top: 3px solid yellow;
+  width: 25%;
+}
+
+main .align-icon {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+main .align-icon .aio-icon {
+  color: #ed1c24 !important;
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 5px;
+  margin: 0 1rem;
+}
+
+.admission-method ion-icon {
+  color: blue;
+}
+
+.admission-method .center ion-icon {
+  color: yellow;
+}
