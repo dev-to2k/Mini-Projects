@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- bootstrap v5.1.3 cdn here and js of bootstrap's version is here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Be Vietnam Pro", sans-serif;
+      }
+
+      svg {
+        width: 100px;
+        height: 100px;
+      }
+
+      button.navbar-toggler:active {
+        outline: none !important;
+        box-shadow: rgba(255, 255, 255, 0.832) 0px 0px 0px 0.25rem !important;
+      }
+
+      .navbar-light a,
+      .navbar-light .navbar-toggler {
+        color: #fff !important;
+        border-color: #fff !important;
+      }
+
+      .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .bg-primary {
+        background-color: #15cdca !important;
+      }
+
+      .text-primary {
+        color: #15cdca !important;
+      }
+
+      .bg-success {
+        background-color: #2ecc71 !important;
+      }
+
+      .overflow-x-hidden {
+        overflow-x: hidden;
+      }
+
+      .object-fit-cover {
+        object-fit: cover;
+      }
+
+      .logo {
+        line-height: 1.2;
+        margin-top: 5px;
+      }
+
+      .logo small {
+        display: inline-block;
+        transform: translateY(-40%);
+        font-size: 0.7rem;
+      }
+
+      @media screen and (max-width: 576px) {
+        .text-transaction {
+          font-size: 0.9rem;
+        }
+
+        footer {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden d-flex flex-column">
+    <header class="text-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+          <div class="logo d-block text-center w-100">
+            <a class="navbar-brand fw-bold d-block py-0 me-0 fs-1" href="#">
+              Co-Kii
+            </a>
+            <small>Good thing must share!</small>
+          </div>
+
+          <!-- <button 
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </nav>
+    </header>
+    <main class="text-center flex-grow-1">
+      <div class="wrap-icon">
+        <img
+          src="https://img.freepik.com/free-vector/background-seamless-pattern-vector-with-cute-memphis_53876-105506.jpg?w=1480&t=st=1689829164~exp=1689829764~hmac=3d55eee0114ae7e6c628ba6a7f405146312a8af435c653976949597224fcb374"
+          style="height: 150px"
+          class="abstract-shape img-fluid d-block w-100 object-fit-cover"
+          alt="abstract-shape"
+        />
+        <div
+          class="bg-white rounded-circle mx-auto"
+          style="transform: translateY(-55%); width: fit-content"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#2ecc71"
+              d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1 17l-5-5.299 1.399-1.43 3.574 3.736 6.572-7.007 1.455 1.403-8 8.597z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="main-content text-center p-3"
+        style="transform: translateY(-30%)"
+      >
+        <strong class="d-block fs-5 mt-3 mb-2">Payment Successful</strong>
+        <p class="text-transaction text-break mb-0 d-inline-block">
+          Transaction number: 1234567890
+        </p>
+        <hr />
+        <p class="mb-2">
+          Total amount paid <strong class="text-primary">$45.25</strong>
+        </p>
+        <p class="mb-0">
+          Payed by <strong class="text-primary">HitPay</strong>
+        </p>
+      </div>
+    </main>
+    <footer class="text-secondary d-block w-100 text-center text-primary">
+      <a
+        class="text-primary text-decoration-none fw-bold d-block py-0 me-0 fs-1 opacity-0"
+        href="#"
+        style="transform: translateY(5px)"
+      >
+        Co-Kii
+      </a>
+      <small>co-kii@gmail.com</small>
+    </footer>
+  </body>
+</html>
