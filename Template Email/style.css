@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* Definition */
+  --primary: #15cdca;
+  --success: #27ae60;
+
+  /* Variables */
+  --text-primary: var(--primary);
+  --text-success: var(--success);
+
+  --bg-primary: var(--primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.bg-primary {
+  background-color: var(--bg-primary) !important;
+}
+
+.text-primary {
+  color: var(--text-primary) !important;
+}
+
+.icon-checked {
+  width: 70px;
+  color: var(--text-success);
+}
+
+.card {
+  width: 50vw;
+  font-size: 1rem;
+}
+
+.card::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.info .top strong {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 90vw;
+    font-size: 0.75rem;
+  }
+
+  .info .top strong {
+    font-size: 1rem;
+  }
+}
